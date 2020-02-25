@@ -7,7 +7,7 @@ use App\Hobi;
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
+| Nama : Agung Gumelars
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
@@ -41,7 +41,7 @@ Route::get('relasi-3',function()
 
     foreach ($dosen->mahasiswa as $temp)
     echo '<li> Nama : ' . $temp->nama .
-        '<strong>' . $temp->nim . '</strong>
+        '<br><strong>' . $temp->nim . '</strong>
         </li>';
 });
 
@@ -81,3 +81,22 @@ Route::get('eloquent2',function()
     $mahasiswa = Mahasiswa::with('wali','dosen','hobi')->get()->take(1);
     return view('eloquent',compact('mahasiswa'));
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//duhh
+
+Route::get('beranda',function(){
+    return view('beranda');
+});
+
+Route::get('tentang',function(){
+    return view('tentang');
+});
+
+Route::get('kontak',function(){
+    return view('kontak');
+});
+
+Route::get('dosen','DosenController');
