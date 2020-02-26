@@ -99,4 +99,4 @@ Route::get('kontak',function(){
     return view('kontak');
 });
 
-Route::get('dosen','DosenController');
+Route::resource('dosen','DosenController');
