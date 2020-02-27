@@ -36,9 +36,12 @@
                         @guest
                         @else
                         <li class="nav-item">
-                            <a href="{{route('dosen.index')}}" class="navlink">
+                            <a href="{{route('dosen.index')}}" class="nav-link">
                                 Dosen
-                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('hobi.index')}}" class="nav-link">Hobi</a>
+                        </li>
                         </a>
                         @endguest
                     </ul>

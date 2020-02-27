@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Menu</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -15,6 +15,12 @@
                     @endif
 
                     You are logged in!
+                <br>
+                <br>
+                Jika Ingin Masuk Ke Tabel Hobi Silahkan Klik =>
+                <a href="{{route('hobi.index')}}" class="btn btn-primary">HOBI</a><br>
+                Jika Ingin Masuk Ke Tabel Dosen Silahkan Klik =>
+                <a href="{{route('dosen.index')}}" class="btn btn-warning">DOSEN</a>
                 </div>
             </div>
         </div>

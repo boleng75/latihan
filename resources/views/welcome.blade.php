@@ -15,6 +15,8 @@
                     @endif
 
                     SELAMAT DATANG!!
+
+                    <br><br><h3>Silahkan Login Terlebih Dahulu</h3>
                 </div>
             </div>
         </div>
